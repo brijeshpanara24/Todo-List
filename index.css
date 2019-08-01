@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+/* main title --------------------------------------------------------------------------------------------------------*/
+
+.main-title {
+    color: #EBD8D8;
+    text-align: center;
+
+    font-weight: lighter;
+    font-size: 100px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* list container ------------------------------------------------------------------------------------------------------*/
+
+.list-container {
+    margin-bottom: 100px;
+    box-shadow: 0px 1px 5px 0px #BBB;
+}
+
+.box-shadow {
+    box-shadow: 0px 1px 5px 0px #BBB,0px 10px 0px -5px #FFFFFF,0px 11px 5px -5px #BBB,0px 20px 0px -10px #FFFFFF,0px 21px 5px -10px #BBB;    
+}
+
+/* task input container ------------------------------------------------------------------------------------------------*/
+
+.task-input-container {
+    width: 40vw;
+    min-width: 500px;
+    padding: 10px;
+
+    border: 1px solid #E6E6E6;
+    background-color: #FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+
+    color: #4D4D4D;
+    background-color: #FFFFFF;
+    border-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.complete-task-container > .input-text{
+    color: #D9D9D9;
+    text-decoration: line-through;
+}
+
+input::placeholder {
+    color: #E6E6E6;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* select all --------------------------------------------------------------------------------------------------------*/
+
+.select-all {
+    height: 25px;
+    margin: 10px;
+    font-size: 25px;
+    transform: rotate(90deg);
+
+    color: #E6E6E6;
+    background-color: #FFFFFF;
+
+    user-select: none;
+}
+
+.active-select-all {
+    color: #737373;
+}
+
+/* task container ----------------------------------------------------------------------------------------------------*/
+
+.task-container {
+    padding: 10px;
+    width: 40vw;
+    min-width: 500px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+
+    display: flex;
+    align-items: center;
+}
+
+/*check box*/
+.task-container > .checkbox {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    color: #FFFFFF;
+    background: none;
+    border: 1px solid #E6E6E6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+}
+
+.complete-task-container > .checkbox {
+    color: #5CC2AF;
+    border: 1px solid #5CC2AF;
+}
+
+/*input text*/
+.task-container > .task-display-input-div {
+    width: 100%;
+    padding: 10px;
+
+    color: #4D4D4D;
+    background-color: #FFFFFF;
+    border-style: none;
+
+    display: flex;
+    word-break: break-all;
+
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.complete-task-container > .task-display-input-div {
+    color: #D9D9D9;
+    text-decoration: line-through;
+}
+
+
+/*delete sign*/
+
+.task-container p {
+    margin: 0;
+    padding: 0;
+
+    color: #AF5B5D;
+    background: #FFFFFF;
+
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    visibility: hidden;
+}
+
+.task-container:hover p {
+    visibility: visible;
+}
+
+
+/* option-container -----------------------------------------------------------------------------------------------------------*/
+
+.option-container {
+    width: 40vw;
+    min-width: 500px;
+    padding: 10px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    user-select: none;
+}
+
+.option-container p {
+    padding: 0px 5px;
+    margin: 0px 10px;
+
+    background-color: #FFFFFF;
+
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.active-option {
+    margin: 0px 9px;
+    border-radius: 4px;
+    border: 1px solid #AF5B5D;
+}
+
+.inactive-option-container:hover {
+    margin: 0px 9px;
+    border-radius: 4px;
+    border: 1px solid #F0D6D6;
+}
+
+.flex-grow {
+    flex: 1;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+.default-cursor {
+    cursor: default;
+}
+

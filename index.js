@@ -383,13 +383,15 @@ function fetchData() {
 
     var taskListLength = localStorage.getItem('taskListLength');
     if(isUndefinedOrNull(taskListLength))
-        taskListLength=0;
+    taskListLength=0;
 
     listController.clearList();
     for(var i=0;i<taskListLength;i++)
-        listController.addTask(JSON.parse(localStorage.getItem('task'+i)));
+    listController.addTask(JSON.parse(localStorage.getItem('task'+i)));
 
     var currentPage = localStorage.getItem('currentPagePosition');
+    if(currentPage===undefined || currentPage===null)
+    currentPage = 1;
     listController.setCurrentPage(currentPage);
 
     displayController.resetDisplay();
